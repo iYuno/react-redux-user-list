@@ -1,0 +1,19 @@
+.input {
+  border-radius: 5px;
+  border: 1px solid vars.$border;
+  outline: none;
+  padding: 5px 10px;
+
+  &:focus {
+    border-color: vars.$text-color;
+  }
+
+  &::placeholder {
+    color: vars.$border;
+  }
+}
+
+
+.danger {
+  border-color: vars.$danger;
+}

@@ -6,7 +6,7 @@ module.exports = {
     "plugin:@conarti/feature-sliced/recommended",
     "plugin:@typescript-eslint/recommended",
   ],
-  plugins: ["prettier"],
+  plugins: ["prettier", "stylelint"],
   settings: {
     "import/resolver": {
       typescript: {
@@ -18,4 +18,14 @@ module.exports = {
   rules: {
     "prettier/prettier": "error",
   },
+  overrides: [
+    {
+      files: ["*.scss", "*.css"],
+      rules: {
+        "no-alert": "off",
+        "no-console": "off",
+        "prettier/prettier": "off",
+      },
+    },
+  ],
 };

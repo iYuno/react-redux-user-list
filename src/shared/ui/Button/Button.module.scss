@@ -1,0 +1,30 @@
+.button {
+  padding: 5px 15px;
+  border-radius: 5px;
+
+  border: 1px solid vars.$border;
+  background-color: vars.$background-color;
+  color: vars.$text-color;
+
+  &:disabled {
+    opacity: .8;
+  }
+}
+
+.primary {
+  border: none;
+  background-color: vars.$primary;
+  color: vars.$text-foreground-color;
+}
+
+.secondary {
+  border: none;
+  background-color: vars.$secondary;
+  color: vars.$text-foreground-color;
+}
+
+.muted {
+  border: none;
+  background-color: vars.$muted;
+  color: vars.$text-foreground-color;
+}

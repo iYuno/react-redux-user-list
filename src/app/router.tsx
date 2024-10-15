@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import { MainPage } from "@/pages/main";
-import { BaseLayout } from "./layouts/baseLayout";
+import { BaseLayout } from "./layouts/BaseLayout";
 
 export const router = createBrowserRouter(
   [
@@ -8,13 +8,13 @@ export const router = createBrowserRouter(
       element: <BaseLayout />,
       children: [
         {
-          path: "/",
-          element: <MainPage></MainPage>,
+          path: "",
+          element: <MainPage />,
         },
       ],
     },
   ],
   {
-    basename: "/react-test-lab",
+    basename: "/react-redux-user-list",
   },
 );
