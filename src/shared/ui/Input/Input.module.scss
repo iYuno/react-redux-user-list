@@ -9,7 +9,12 @@
   }
 
   &::placeholder {
-    color: vars.$border;
+    color: rgba(0, 0, 0, .3);
+  }
+
+  &:disabled {
+    background-color: inherit;
+    color: rgba(0, 0, 0, .3);
   }
 }
 

@@ -1,10 +1,9 @@
-import { Input, TextArea } from "@/shared/ui";
+import { UserProfile } from "@/widgets/UserProfile";
 
 function MainPage() {
   return (
     <div style={{ margin: "10px 10px" }}>
-      <Input placeholder="имя" />
-      <TextArea />
+      <UserProfile />
     </div>
   );
 }

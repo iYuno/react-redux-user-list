@@ -1,5 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
-import { MainPage } from "@/pages/main";
+import { UserList } from "@/widgets/UserList";
+import { UserProfile } from "@/widgets/UserProfile";
 import { BaseLayout } from "./layouts/BaseLayout";
 
 export const router = createBrowserRouter(
@@ -9,7 +10,11 @@ export const router = createBrowserRouter(
       children: [
         {
           path: "",
-          element: <MainPage />,
+          element: <UserList />,
+        },
+        {
+          path: "/user/:id",
+          element: <UserProfile />,
         },
       ],
     },
