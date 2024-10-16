@@ -9,7 +9,6 @@ export default defineConfig({
         api: "modern-compiler",
         additionalData: `
           @use "/src/app/styles/variables.scss" as vars;
-          // @import "/src/app/styles/variables.scss";
         `,
       },
     },

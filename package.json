@@ -9,7 +9,9 @@
     "preview": "vite preview",
     "lint:js": "eslint --ext .js,.jsx,.ts,.tsx src/",
     "lint:styles": "stylelint \"**/*.scss\" --fix",
-    "lint": "npm run lint:js && npm run lint:styles"
+    "lint": "npm run lint:js && npm run lint:styles",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.3.0",
@@ -37,6 +39,7 @@
     "eslint-import-resolver-typescript": "^3.6.3",
     "eslint-plugin-prettier": "^5.2.1",
     "eslint-plugin-stylelint": "^0.1.1",
+    "gh-pages": "^6.2.0",
     "globals": "^15.9.0",
     "sass": "^1.79.5",
     "stylelint-config-standard": "^36.0.1",
