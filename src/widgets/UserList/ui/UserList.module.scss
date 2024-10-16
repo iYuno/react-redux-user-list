@@ -1,7 +1,9 @@
 .container {
-  padding: 2rem 2rem;
+  padding: 2rem;
   height: calc(100vh - 4rem);
-  width: 85vw;
+  max-width: calc(85vw - 4rem);
+  width: 100%;
+  min-width: 425px;
 
   h3 {
     margin: 0;
@@ -33,7 +35,7 @@
   }
 
   & li:not(:last-child) {
-    margin-bottom: .75rem;
+    margin-bottom: 1.25rem;
   }
 
   &::-webkit-scrollbar {
@@ -73,6 +75,7 @@
   a {
     color: vars.$primary;
     cursor: pointer;
+    text-decoration: none;
   }
 }
 

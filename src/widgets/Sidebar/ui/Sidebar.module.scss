@@ -4,7 +4,10 @@
   padding: 2rem 1.25rem;
   gap: 0.625rem;
   background-color: vars.$background-secondary-color;
-  width: 15vw;
+  min-width: 130px;
+  max-width: 250px;
+  width: 100%;
+
   p {
     margin: 0;
   }

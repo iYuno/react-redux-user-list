@@ -1,7 +1,7 @@
 .button {
   padding: 5px 15px;
   border-radius: 5px;
-
+  cursor: pointer;
   border: 1px solid vars.$border;
   background-color: vars.$background-color;
   color: vars.$text-color;

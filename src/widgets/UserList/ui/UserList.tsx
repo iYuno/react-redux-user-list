@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useAppSelector } from "@/shared/model/hooks";
 import styles from "./UserList.module.scss";
 function UserList() {
@@ -23,7 +24,7 @@ function UserList() {
                   <span className={styles.label}>компания: &nbsp;</span>
                   {company}
                 </p>
-                <a href={`react-redux-user-list/user/${id}`}>Подробнее</a>
+                <Link to={`/user/${id}`}>Подробнее</Link>
               </div>
             </li>
           ))}

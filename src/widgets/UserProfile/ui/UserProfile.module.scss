@@ -1,7 +1,9 @@
 .container {
-  padding: 2rem 2rem;
+  padding: 2rem;
   height: calc(100vh - 4rem);
-  width: 85vw;
+  max-width: calc(85vw - 4rem);
+  width: 100%;
+  min-width: 425px;
 }
 
 .header {
@@ -15,28 +17,33 @@
   }
 }
 
-.profileForm {
+.fieldsList {
   list-style: none;
   padding: 0;
-  
   padding: 1.25rem .75rem;
   border: 1px solid adjust-color(vars.$border, $lightness: 10%);
   border-radius: .5rem;
   margin: 0.625rem 0;
-
-  & div {
+  
+  & li {
     display: flex;
     flex-direction: column;
     gap: 2px;
+    max-width: calc(100% - 1.5rem);
+    width: 100%;
   }
 
-  & div:not(:last-child) {
+  & li:not(:last-child) {
     width: 50%;
     margin-bottom: 10px;
   }
-  
 }
 
 .editButton {
   float: right;
 }
+
+.notFound {
+  margin: 0;
+}
+

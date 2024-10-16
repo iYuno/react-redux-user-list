@@ -9,13 +9,15 @@
   }
 
   &::placeholder {
-    color: rgba(0, 0, 0, .3);
+    color: rgb(0 0 0 / 30%);
   }
 
   &:disabled {
     background-color: inherit;
-    color: rgba(0, 0, 0, .3);
+    color: rgb(0 0 0 / 30%);
   }
+
+  max-height: 10rem;
 }
 
 

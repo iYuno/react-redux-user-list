@@ -1,11 +1,11 @@
-import { Button } from "@/shared/ui";
+import { SortByButton } from "@/features/user/sortBy";
 import styles from "./Sidebar.module.scss";
 function Sidebar() {
   return (
     <div className={styles.container}>
       <p>Сортировка</p>
-      <Button variant="primary">по городу</Button>
-      <Button variant="primary">по компании</Button>
+      <SortByButton sortBy="city">по городу</SortByButton>
+      <SortByButton sortBy="company">по компании</SortByButton>
     </div>
   );
 }
